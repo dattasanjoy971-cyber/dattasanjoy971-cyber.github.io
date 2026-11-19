@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sanjoy Datta — Multi-skilled Professional portfolio covering management, accounts, industrial engineering, garment operations and quality control.">
+  <meta name="theme-color" content="#101a2c">
+  <title>Sanjoy Datta | Multi-skilled Professional</title>
+  <style>
+    :root{--navy:#101a2c;--navy2:#172640;--ink:#172033;--muted:#667085;--paper:#f5f7fb;--white:#fff;--teal:#35c6b0;--line:#e5eaf2;--shadow:0 18px 50px rgba(16,26,44,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,26,44,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:.08em}.brand span{color:var(--teal)}
+    nav{display:flex;gap:22px;align-items:center;font-size:.9rem;color:#d7dfeb}nav a:hover{color:var(--teal)}
+    .menu{display:none;background:none;border:1px solid #506078;color:white;border-radius:8px;padding:7px 11px;font-size:1rem}
+    .hero{background:radial-gradient(circle at 82% 25%,#294767 0,transparent 34%),linear-gradient(135deg,var(--navy),#14243d);color:white;padding:104px 0 96px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.45fr .75fr;gap:60px;align-items:center}.eyebrow{color:var(--teal);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+    h1{font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.03;letter-spacing:-.055em;margin:18px 0}.hero h2{font-size:clamp(1.2rem,2.5vw,1.65rem);font-weight:500;color:#d9e4f2;margin:0 0 18px}
+    .hero p{max-width:650px;color:#bdc9da;font-size:1.05rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:9px;font-weight:750;font-size:.92rem;border:1px solid transparent;cursor:pointer}
+    .primary{background:var(--teal);color:#082a2a}.secondary{border-color:#60728b;color:white}.btn:hover{transform:translateY(-2px)}
+    .profile-card{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);padding:28px;border-radius:22px;box-shadow:0 25px 70px rgba(0,0,0,.18)}
+    .avatar{width:112px;height:112px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#35c6b0,#83e1d1);color:#102239;font-size:2.4rem;font-weight:900;margin-bottom:20px}
+    .profile-card strong{display:block;font-size:1.15rem}.profile-card small{color:#b9c8d9}.profile-line{height:1px;background:rgba(255,255,255,.15);margin:20px 0}
+    section{padding:82px 0}.section-head{max-width:680px;margin-bottom:34px}.kicker{color:#159c8d;font-size:.76rem;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
+    h2.section-title{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;line-height:1.15;margin:8px 0 12px}.lead{color:var(--muted);font-size:1.02rem}
+    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow)}
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{background:#f7f9fc;border-radius:12px;padding:17px}.fact b{display:block;font-size:.82rem;color:#738096;margin-bottom:4px}.fact span{font-weight:750}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.skill{background:white;border:1px solid var(--line);padding:23px;border-radius:15px}.skill .symbol{font-size:1.5rem}.skill h3{margin:10px 0 6px}.skill p{margin:0;color:var(--muted);font-size:.92rem}
+    .timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.item{background:white;border:1px solid var(--line);border-radius:14px;padding:23px}.item h3{margin:0 0 6px}.item p{color:var(--muted);margin:0}.tag{display:inline-block;background:#e8f8f5;color:#087c70;border-radius:30px;padding:4px 10px;font-size:.75rem;font-weight:800;margin-bottom:10px}
+    .project-note{border:1px dashed #b9c6d8;background:#fff;border-radius:15px;padding:26px;color:var(--muted)}
+    .contact{background:var(--navy);color:white}.contact .lead{color:#bdc9da}.contact-box{display:flex;justify-content:space-between;gap:28px;align-items:center;border:1px solid #35465f;border-radius:18px;padding:30px;background:#172640}
+    .contact-box p a{color:var(--teal);text-decoration:underline;text-underline-offset:3px}.contact-box .actions{margin:0}
+    footer{background:#0b1322;color:#9eacc0;padding:24px 0;font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:800px){.hero-grid,.about-grid{grid-template-columns:1fr}.profile-card{max-width:420px}.skills{grid-template-columns:1fr 1fr}.hero{padding:75px 0}}
+    @media(max-width:580px){.wrap{width:min(100% - 30px,1120px)}.menu{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--navy);padding:18px 22px 24px;flex-direction:column;align-items:flex-start}nav.open{display:flex}.skills,.timeline,.facts{grid-template-columns:1fr}section{padding:62px 0}.contact-box{align-items:flex-start;flex-direction:column}.hero-grid{gap:35px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">SANJOY<span>.</span></a>
+    <button class="menu" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Personal Portfolio</div>
+        <h1>Sanjoy<br>Datta<span style="color:var(--teal)">.</span></h1>
+        <h2>Multi-skilled Professional</h2>
+        <p>Management-minded and adaptable professional with learning and work exposure across accounts and finance, garment operations, quality control, and industrial engineering. Interested in solving practical problems, improving processes, and creating value through continuous learning.</p>
+        <div class="actions"><a class="btn primary" href="#contact">Get in touch</a><a class="btn secondary" href="#about">Explore my profile</a></div>
+      </div>
+      <aside class="profile-card">
+        <div class="avatar" aria-label="Profile photo placeholder">SD</div>
+        <strong>Professional Profile</strong><small>Adaptable · Analytical · Practical</small>
+        <div class="profile-line"></div><small>Areas of interest</small>
+        <p style="color:#e0e8f2;margin:8px 0 0">Business Operations<br>Accounts & Administration<br>Quality & Process Improvement</p>
+      </aside>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">About me</div><h2 class="section-title">A broad skill set. One goal: meaningful work.</h2><p class="lead">I bring together management education, industrial engineering knowledge, and practical exposure to business and operational work.</p></div>
+      <div class="about-grid">
+        <div class="panel"><h3>My professional approach</h3><p>I value responsibility, continuous improvement, and practical problem-solving. I enjoy working across different functions, learning new tools, and turning information into organized, useful outcomes.</p><p>My interests span finance and administration, garment operations, quality control, procurement, and digital productivity. I am open to suitable opportunities where adaptability and a willingness to learn are valued.</p></div>
+        <div class="panel facts">
+          <div class="fact"><b>Education</b><span>MBA & BBA in Management</span></div><div class="fact"><b>Technical Study</b><span>Industrial Engineering</span></div>
+          <div class="fact"><b>Work Interests</b><span>Operations & Finance</span></div><div class="fact"><b>Career Focus</b><span>Growth & Problem-solving</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" style="background:#edf1f7">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Core capabilities</div><h2 class="section-title">Skills & areas of knowledge</h2><p class="lead">A selection of practical skills and professional areas. Specific proficiency levels can be added after review.</p></div>
+      <div class="skills">
+        <article class="skill"><div class="symbol">📊</div><h3>Accounts & Finance</h3><p>Basic accounting and finance work, financial records, and administrative support.</p></article>
+        <article class="skill"><div class="symbol">📑</div><h3>VAT & Tax</h3><p>VAT calculations, Mushak forms, basic tax-return knowledge, and VAT return processes.</p></article>
+        <article class="skill"><div class="symbol">📈</div><h3>MS Excel</h3><p>Intermediate Excel skills for organizing information and routine office tasks.</p></article>
+        <article class="skill"><div class="symbol">🏭</div><h3>Garment Operations</h3><p>Exposure to local garment-factory operations and management responsibilities.</p></article>
+        <article class="skill"><div class="symbol">✓</div><h3>Quality Control</h3><p>Interest and experience across quality-focused work and operational standards.</p></article>
+        <article class="skill"><div class="symbol">⚙️</div><h3>Industrial Engineering</h3><p>Technical education in industrial engineering and process-oriented thinking.</p></article>
+        <article class="skill"><div class="symbol">🤝</div><h3>Administration</h3><p>Coordination, organization, communication, and general management support.</p></article>
+        <article class="skill"><div class="symbol">💻</div><h3>Digital Productivity</h3><p>Computer skills and willingness to learn digital tools and new workflows.</p></article>
+        <article class="skill"><div class="symbol">🎵</div><h3>Creative Technology</h3><p>Personal interest in music production and creative technical tools.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Professional journey</div><h2 class="section-title">Experience & exposure</h2><p class="lead">A concise overview of areas where I have developed practical experience. Employer names, dates, and detailed responsibilities can be added after confirmation.</p></div>
+      <div class="timeline">
+        <article class="item"><span class="tag">Garment Operations</span><h3>Factory Management</h3><p>Approximately one year of experience in a local garment factory management role.</p></article>
+        <article class="item"><span class="tag">Financial Services</span><h3>Financial Associate</h3><p>Experience as a Financial Associate with MetLife.</p></article>
+        <article class="item"><span class="tag">Accounts & Finance</span><h3>Accounts Support</h3><p>Practical exposure to accounts and finance-related work, including VAT and tax tasks.</p></article>
+        <article class="item"><span class="tag">Continuous Learning</span><h3>Cross-functional Development</h3><p>Building capability across office productivity, operations, quality, and professional communication.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="education" style="background:#edf1f7">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Academic background</div><h2 class="section-title">Education & qualifications</h2></div>
+      <div class="timeline">
+        <article class="item"><span class="tag">2021</span><h3>Diploma in Industrial Engineering</h3><p>BKMEA</p></article>
+        <article class="item"><span class="tag">2019</span><h3>Master of Business Administration (MBA)</h3><p>Management · National University · CGPA 2.72/4.00</p></article>
+        <article class="item"><span class="tag">2017</span><h3>Bachelor of Business Administration (BBA)</h3><p>Management · National University · CGPA 3.12/4.00</p></article>
+        <article class="item"><span class="tag">2013</span><h3>Higher Secondary Certificate (HSC)</h3><p>Business Studies · Dhaka Board · GPA 4.00/5.00</p></article>
+        <article class="item"><span class="tag">2011</span><h3>Secondary School Certificate (SSC)</h3><p>Business Studies · Dhaka Board · GPA 4.31/5.00</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Selected work</div><h2 class="section-title">Projects & portfolio samples</h2><p class="lead">This section will showcase real examples of your work, such as Excel reports, process documents, quality-control formats, or creative projects.</p></div>
+      <div class="project-note"><strong>Projects coming soon</strong><br>We will add only genuine work samples. You can include screenshots or downloadable files after removing confidential company or client information.</div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Contact</div><h2 class="section-title">Let's connect.</h2><p class="lead">Open to relevant professional opportunities, collaboration, and conversations about business operations and practical problem-solving.</p></div>
+      <div class="contact-box">
+        <div>
+          <h3 style="margin:0 0 5px">Interested in working together?</h3>
+          <p style="margin:0;color:#bdc9da">
+            Email: <a href="mailto:dattasanjoy971@gmail.com">dattasanjoy971@gmail.com</a><br>
+            WhatsApp: <a href="https://wa.me/8801931421735" target="_blank" rel="noopener noreferrer">+8801931421735</a>
+          </p>
+        </div>
+        <div class="actions" style="margin:0">
+          <a class="btn primary" href="mailto:dattasanjoy971@gmail.com?subject=Professional%20Inquiry">Email me</a>
+          <a class="btn secondary" href="https://wa.me/8801931421735" target="_blank" rel="noopener noreferrer">WhatsApp me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Sanjoy Datta. All rights reserved.</span><span>Designed as a professional personal portfolio.</span></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navLinks');
+  menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
